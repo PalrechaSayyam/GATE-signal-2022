@@ -82,7 +82,7 @@ Consider the circuit shown in the figure with input V(t) in volts.The sinusoidal
 \fi
 \begin{table}[h]
     \centering
-    \input{tables/table1.tex}
+    \input{2022/EC/39/tables/table1.tex}
     \caption{Variable description}
     \label{tab:GATE.2022.EC.39.1}
 \end{table}\\
@@ -110,24 +110,5 @@ Upon plugging in R=1$\ohm$,
 Applying inverse Laplace,
 \begin{align}
     L=1H
-\end{align}
-
-Appendix\\
-Laplace transform of $\sin\brak{at+b}$ is as follows,
-\begin{align}
-    &\sin\brak{at+b}\system{L}\int_{0}^{\infty}\sin\brak{at+b}e^{-st}dt\\
-    &\int_{0}^{\infty}\sin\brak{at+b}e^{-st}dt=\cos{b}\int_{0}^{\infty}\sin\brak{at}e^{-st}dt+\sin{b}\int_{0}^{\infty}\cos\brak{at}e^{-st}dt\\
-    &\int_{0}^{\infty}\cos\brak{at}e^{-st}dt=\frac{e^{-st}}{a}sin{at}\Bigg|_{0}^{\infty}+\frac{s}{a}\int_{0}^{\infty}\sin\brak{at}e^{-st}dt\\
-    &\int_{0}^{\infty}\cos\brak{at}e^{-st}dt=\frac{s}{a}\int_{0}^{\infty}\sin\brak{at}e^{-st}dt\label{eq:GATE.2022.EC.39.2}\\
-    &\int_{0}^{\infty}\cos\brak{at}e^{-st}dt=\frac{s}{a}\brak{\frac{-e^{-st}}{a}cos{at}\Bigg|_{0}^{\infty}+\frac{s}{a}\int_{0}^{\infty}\cos\brak{at}e^{-st}dt}\\
-    &\int_{0}^{\infty}\cos\brak{at}e^{-st}dt=\frac{s}{a^2}+\frac{s^2}{a^2}\int_{0}^{\infty}\cos\brak{at}e^{-st}dt
-\end{align}
-\begin{align}
-    &\int_{0}^{\infty}\cos\brak{at}e^{-st}dt=\frac{s}{s^2+a^2},s>0
-\end{align}
-From \eqref{eq:GATE.2022.EC.39.2} we can say,
-\begin{align}
-    &\int_{0}^{\infty}\sin\brak{at}e^{-st}dt=\frac{a}{s^2+a^2},s>0\\
-    &\therefore \sin\brak{at+b}\system{L}\frac{s\sin{b}+a\cos{b}}{s^2+a^2}
 \end{align}
 %\end{document}
