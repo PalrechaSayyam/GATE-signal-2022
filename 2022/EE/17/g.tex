@@ -1,3 +1,4 @@
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,onecolumn]{IEEEtran}
@@ -122,7 +123,7 @@
 The Bode magnitude plot of a first order stable system is constant with frequency. The asymptotic value of the high frequency phase, for the system, is $-180\degree$ . This system has \\
 \begin{figure}[h]
     \centering
-    \resizebox{0.55\columnwidth}{!}{\input{figs/fig1}}
+    \resizebox{0.55\columnwidth}{!}{\input{2022/EE/17/figs/fig1}}
     \caption{}
     \label{fig:gate2022ee17fig1}
 \end{figure} \\
@@ -134,6 +135,7 @@ The Bode magnitude plot of a first order stable system is constant with frequenc
 \end{enumerate}\hfill Gate 2022 EE 17 \\
 
 \solution\\
+\fi
 Flat constant magnitude response for all frequency of system shows that it is an all pass system.\\
 In all pass system, poles and zeros are symmetrical about $j\omega$ axis.\\
 Possible transfer functions are\\
@@ -172,4 +174,4 @@ Hence, the transfer function of given all pass filter.\\
 T(s)=\frac{a-s}{a+s} \quad a>0
 \end{align}
 Hence, the system has one LHP pole and one RHP zero at the same frequency.
-\end{document}
+%\end{document}
