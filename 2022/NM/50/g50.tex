@@ -84,8 +84,8 @@
 \providecommand{\diff}[2]{\ensuremath{\frac{d{#1}}{d{#2}}}}
 \providecommand{\myceil}[1]{\left \lceil #1 \right \rceil }
 \newcommand\figref{Fig.~\ref}
-\newcommand{\system}[1]{\stackrel{#1}{\xleftrightarrow{\mathcal{L}}}}
-\newcommand{\systeminv}[1]{\stackrel{#1}{\xleftrightarrow{\mathcal{L}^{-1}}}}
+\newcommand{\systemL}[1]{\stackrel{#1}{\xleftrightarrow{\mathcal{L}}}}
+\newcommand{\systemLinv}[1]{\stackrel{#1}{\xleftrightarrow{\mathcal{L}^{-1}}}}
 
 
 \newcommand\tabref{Table~\ref}
@@ -142,19 +142,19 @@ Then $y(1)$ is \underline{\hspace{2.5cm}}  (rounded off to nearest integer).    
 \end{table}
 
 \begin{equation}
-y^{''}(t) \system{} s^{2}Y(s)-sy(0)-y^{'}(0) \\ \label{eq:ishitha.g22.nm.50.2.eq}
+y^{''}(t) \systemL{} s^{2}Y(s)-sy(0)-y^{'}(0) \\ \label{eq:ishitha.g22.nm.50.2.eq}
 \end{equation}
 
 \begin{equation}
-y^{'}(t)  \system{} sY(s)-y(0) \\ \label{eq:ishitha.g22.nm.50.3.eq}
+y^{'}(t)  \systemL{} sY(s)-y(0) \\ \label{eq:ishitha.g22.nm.50.3.eq}
 \end{equation}
 
 \begin{equation}
-y(t)     \system{}   Y(s) \\ \label{eq:ishitha.g22.nm.50.4.eq}
+y(t)     \systemL{}   Y(s) \\ \label{eq:ishitha.g22.nm.50.4.eq}
 \end{equation}
 
 \begin{equation}
-e^{at}   \system{}  \frac{1}{s-a} \\ \label{eq:ishitha.g22.nm.50.5.eq}
+e^{at}   \systemL{}  \frac{1}{s-a} \\ \label{eq:ishitha.g22.nm.50.5.eq}
 \end{equation}
 
 Applying Laplace transform on both sides of  ~\eqref{eq:ishitha.g22.nm.50.1.eq},
@@ -175,7 +175,7 @@ Y(s) = \frac{3}{(s-5)\brak{s^{2}-4s-12}} &+ \frac{\brak{18s -73 }}{7\brak{s^{2}-
 
 
 \begin{equation}
-\frac{1}{s-a}   \systeminv{}  e^{at}  \\ \label{eq:ishitha.g22.nm.50.7.eq}
+\frac{1}{s-a}   \systemLinv{}  e^{at}  \\ \label{eq:ishitha.g22.nm.50.7.eq}
 \end{equation}
 Now finding Inverse Laplace Transform on both sides of ~\eqref{eq:ishitha.g22.nm.50.6.eq} ,
 
