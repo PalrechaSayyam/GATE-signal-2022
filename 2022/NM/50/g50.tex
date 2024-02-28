@@ -164,14 +164,12 @@ Applying Laplace transform on both sides of  ~\eqref{eq:ishitha.g22.nm.50.1.eq},
 
 From ~\eqref{eq:ishitha.g22.nm.50.2.eq},~\eqref{eq:ishitha.g22.nm.50.3.eq},~\eqref{eq:ishitha.g22.nm.50.4.eq},~\eqref{eq:ishitha.g22.nm.50.5.eq}
 \begin{align}
-Y(s)\brak{s^{2}-4s-12} -y(0)\brak{s-4} \nonumber \\-y^{'}(0) &= \frac{3}{s-5} \\
+Y(s)\brak{s^{2}-4s-12} -y(0)\brak{s-4} -y^{'}(0) &= \frac{3}{s-5} \\
 Y(s)\brak{s^{2}-4s-12} - \frac{\brak{18s -73 }}{7}  &=\frac{3}{(s-5)} \\
-Y(s) = \frac{3}{(s-5)\brak{s^{2}-4s-12}} &+ \frac{\brak{18s -73 }}{7\brak{s^{2}-4s-12} } 
+Y(s) &= \frac{3}{(s-5)\brak{s^{2}-4s-12}} + \frac{\brak{18s -73 }}{7\brak{s^{2}-4s-12} } 
+\implies Y(s) = \frac{1}{\brak{s-6}} -\frac{3}{7\brak{s-5}} + \frac{1}{\brak{s+2}} 
+\label{eq:ishitha.g22.nm.50.6.eq}
 \end{align}
-
-\begin{equation}
-\implies Y(s) = \frac{1}{\brak{s-6}} -\frac{3}{7\brak{s-5}} + \frac{1}{\brak{s+2}} \\ \label{eq:ishitha.g22.nm.50.6.eq}
-\end{equation}
 
 
 \begin{equation}
@@ -182,9 +180,6 @@ Now finding Inverse Laplace Transform on both sides of ~\eqref{eq:ishitha.g22.nm
 From ~\eqref{eq:ishitha.g22.nm.50.7.eq}
 \begin{align}
 \implies y(t) &= \brak{e^{6t} -\frac{3}{7}e^{5t} + 2e^{-2t}}u(t)
-\end{align}
-
-\begin{align}
 \implies y(1) &= e^{6} -\frac{3}{7}e^{5} + 2e^{-2} \\
 \therefore y(1) &= 340
 \end{align}
