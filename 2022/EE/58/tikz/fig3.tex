@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+    \begin{axis}[
+      xlabel={$\omega t$},
+      ylabel={$v_0(t)$},
+      axis lines=middle,
+      ymin=-1.5, ymax=1.5,
+      xtick={0,0.5,1.0,1.5},
+      xticklabels={0},
+      ytick={0},
+      grid=none,
+      enlargelimits=0.2,
+      xticklabel style={xshift=-0.4cm},
+      width=8cm,
+      height=6cm,
+      ]
+      \addplot[thick, black] coordinates {(0,1) (0.5,1) (0.5,-1) (1,-1)(1,0)};
+      % Place Vs label at the right position
+      \node at (axis cs:0.25,0.5) {$V_s$};
+      \node at (axis cs:0.75,-0.5) {$-V_s$};
+      
+      
+    \end{axis}
+\end{tikzpicture}
+  
+\vspace{1cm} % Add vertical space between the plots
+  
+\begin{tikzpicture}
+    \begin{axis}[
+      xlabel={$\omega t$},
+      ylabel={$i(t)$},
+      axis lines=middle,
+      ymin=-1.5, ymax=1.5,
+      xtick={0, pi/3},
+      xticklabels={0, $\frac{\pi}{3}$},
+      ytick={0},
+      grid=none,
+      enlargelimits=0.2,
+      xticklabel style={xshift=-0.4cm},
+      width=8cm,
+      height=6cm,
+      ]
+      \addplot[thick, red, domain=0:2*pi, samples=100] {sin(deg(x - pi/3))};
+      
+    \end{axis}
+\end{tikzpicture}
+
