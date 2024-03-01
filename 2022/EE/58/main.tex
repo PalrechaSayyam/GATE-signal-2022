@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,onecolumn]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
@@ -63,23 +64,23 @@
 Q: Consider an ideal full-bridge single-phase DC-AC inverter with a DC bus voltage magnitude of $1000 V$. The inverter output voltage $v(t)$ shown below is obtained when diagonal switches of the inverter are switched with $50\%$ duty cycle. The inverter feeds a load with a sinusoidal current given by $i(t) = 10 \sin(\omega t - \frac{\pi}{3}) \, \mathrm{A}$, where $\omega=\frac{2\pi}{T}$. The active power, in watts, delivered to the load is \underline{\quad}.[Gate2022-EE-58]  \\     
 \begin{figure}[htb]
   \centering
-  \input{./tikz/fig1.tex}
+  \input{2022/EE/58/tikz/fig1.tex}
   \label{fig:EE_58_f1}
 \end{figure}
    
 
 \solution
-
+\fi
 \begin{table}[!ht]
     \centering
-        \input{./tables/table.tex}
+        \input{2022/EE/58/tables/table.tex}
     \caption{Input parameters}
     \label{tab:EE_58_t1}
 \end{table}
 
 \begin{figure}[htb]
   \centering
-  \input{./tikz/fig2.tex}
+  \input{2022/EE/58/tikz/fig2.tex}
    \captionsetup{justification=centering, singlelinecheck=off}
   \caption{circuit diagram of the system}
   \label{fig:EE_58_f2}
@@ -103,17 +104,17 @@ The Fourier series expansion of the given voltage $v(t)$ is,
 
 \begin{figure}[htb]
   \centering
-  \input{./tikz/fig4.tex}
+  \input{2022/EE/58/tikz/fig4.tex}
    \captionsetup{justification=centering, singlelinecheck=off}
   \caption{output voltage and current of the system}
   \label{fig:EE_58_f3}
 \end{figure}
 \begin{figure}[htb]
   \centering
-  \input{./tikz/fig3.tex}
+  \input{2022/EE/58/tikz/fig3.tex}
    \captionsetup{justification=centering, singlelinecheck=off}
   \caption{output voltage and current of the system}
   \label{fig:EE_58_f3}
 \end{figure}
-\end{document}
+%\end{document}
 
