@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
@@ -63,16 +63,17 @@
 The circuit shown is driven by a sinusoidal input voltage, $V_{\text{in}}$, resulting in the output voltage $V_{\text{out}}$. The frequency (in kilohertz) at which the voltage gain is 0 dB is (rounded off to two decimal places).
 \begin{figure}[htb]
 	\centering
-	\input{figs/fig1.tex}
+	\input{2022/IN/56/figs/fig1.tex}
 \end{figure}
 \hfill(GATE IN 2022)\\
 \textbf{Solution:} 
+\fi
 
 This circuit is an inverting OP-AMP. The transfer function of an inverting OP-AMP is given by\\
 \begin{table}[h]
  	\centering
  	\resizebox{14 cm}{!}{
- 		\input{tables/table.tex}
+ 		\input{2022/IN/56/tables/table.tex}
  	}
  	\vspace{6 pt}
  	\caption{Parameters}
@@ -100,8 +101,8 @@ f &= 15.84 \, \text{kHz}
 \end{align}
 \begin{figure}[h!]
 \centering
-\includegraphics[width=\columnwidth]{figs/plot.png}
+\includegraphics[width=\columnwidth]{2022/IN/56/figs/plot.png}
 \caption{Frequency vs Voltage gain}
 \end{figure}
 
-\end{document}
+%\end{document}
