@@ -1,3 +1,4 @@
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,onecolumn]{IEEEtran}
@@ -125,7 +126,7 @@ Consider an FM broadcast that employs the pre-emphasis filter with frequency res
     For the network shown in the figure to act as a corresponding de-emphasis filter, the
 appropriate pair(s) of (R,C) values is/are 
 \underline{\hspace{1in}} \\ \\
-\input{figs/circuit}
+\input{2022/EC/51/figs/circuit}
 \begin{enumerate}
     \item[A.] $R=1k\ohm$, $C=0.1\micro F$
     \item[B.] $R=2k\ohm$, $C=1\micro F$
@@ -133,9 +134,10 @@ appropriate pair(s) of (R,C) values is/are
     \item[D.] $R=2k\ohm$, $C=0.5\micro F$
 \end{enumerate}
   \solution
+  \fi
     \begin{table}[!ht]
     \centering
-        \input{./tables/table}
+        \input{2022/EC/51/tables/table}
     \caption{input parameters}
     \label{}
 \end{table}
@@ -168,8 +170,7 @@ The given $RC$ circuit to act as de-emphasis filter
 Thus $\omega_0=10^4$ rad/sec only possible if we choose $R=1k\ohm$ and $C=0.1\micro F$ from options. Hence, the correct option is (B).
 \begin{figure}[ht]
         \centering
-        \includegraphics[width=\columnwidth]{figs/plot.png}
+        \includegraphics[width=\columnwidth]{2022/EC/51/figs/plot.png}
         \caption{Frequency response of a pre-emphasis filter.}
     \end{figure}
-\end{document}
-\end{document}
+
