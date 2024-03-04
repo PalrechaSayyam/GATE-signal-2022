@@ -24,9 +24,9 @@
 \contentsline {chapter}{\numberline {8}Laplace Transform}{157}{chapter.8}%
 \contentsline {section}{\numberline {8.1}2022}{157}{section.8.1}%
 \contentsline {section}{\numberline {8.2}2021}{214}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Fourier transform}{215}{chapter.9}%
-\contentsline {section}{\numberline {9.1}2022}{215}{section.9.1}%
-\contentsline {section}{\numberline {9.2}2021}{251}{section.9.2}%
-\contentsline {chapter}{\numberline {A}Fourier transform}{253}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Contour Integration}{257}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Laplace Transform}{261}{appendix.C}%
+\contentsline {chapter}{\numberline {9}Fourier transform}{221}{chapter.9}%
+\contentsline {section}{\numberline {9.1}2022}{221}{section.9.1}%
+\contentsline {section}{\numberline {9.2}2021}{257}{section.9.2}%
+\contentsline {chapter}{\numberline {A}Fourier transform}{259}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Contour Integration}{263}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Laplace Transform}{267}{appendix.C}%
