@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
@@ -63,12 +64,12 @@ For the Op-Amp circuit shown below, choose the correct output waveform correspon
 
 \hfill{(GATE PH 2022)}\\
 \textbf{Solution:} \\
-
+\fi
 \begin{table}[htbp]
   \centering
-  \input{tables/table1.tex}
+  \input{2022/PH/11/tables/table1.tex}
   \caption{Input Parameters}
-  \label{tab:PH.11.table1}
+
 \end{table}
 \begin{align}
 V_{in} &= 1.5 \sin(20\pi t)\\
@@ -86,4 +87,4 @@ V_o &= 10 \times 1.5 \sin(20\pi t)
 
 Output amplitude is greater than $V_{\text{sat}}$, so the voltage saturates at $V_{\text{sat}}$.\\
 Therefore, correct answer is (A).
-\end{document}
+%\end{document}
