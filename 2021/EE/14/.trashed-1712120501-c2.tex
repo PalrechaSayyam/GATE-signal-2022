@@ -1,0 +1,74 @@
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+\title{GATE - 21 EE (14)}
+\author{EE23BTECH11051-Rajnil Malviya}
+\date{January 2024}
+\maketitle
+\subsection*{\textit{Question :-}}
+In the given circuit, the value of capacitor C that makes current
+I=0 in $\mu F$ is \\
+\begin{figure}[h!]
+   \includegraphics[width=1\linewidth]{figs/qf1.png}
+\end{figure}\\
+\textit{Solution:- }
+\begin{table}[h!]
+        \input{tables/t4}    
+    \end{table}\\
+Using Laplace transform , modified figure is 
+\begin{figure}[h!]
+   \includegraphics[width=1\linewidth]{figs/f2.png}
+\end{figure}\\
+For $I=0 $ , 
+\begin{align}
+Z & =\infty\\
+    Z&=10+sL+\brak{\frac{\brak{sL+\frac{1}{sC}}\times sL}{sL+\frac{1}{sC}+ sL}}\\
+&=10+sL+\frac{sL+\frac{1}{sC}}{1+\frac{1}{s^{2}LC}+1}\\
+ \implies   2+\frac{1}{s^{2}LC}&=0 \\
+     C&=\frac{-1}{2s^2L}\\
+       &=\frac{1}{2\brak{\omega L}\omega }\\
+       \implies C&= 20\mu F
+\end{align}
+
+\end{document}
