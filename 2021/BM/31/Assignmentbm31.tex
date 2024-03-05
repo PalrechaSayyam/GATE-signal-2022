@@ -1,4 +1,4 @@
-% \iffalse
+ \iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -58,11 +58,13 @@
 \renewcommand{\thetable}{\theenumi}
 In the block diagram shown below, an infinite tap FIR filter with transfer function $H\brak{z}=\frac{Y\brak{z}}{X\brak{z}}$ is realized. If $H\brak{z}=\frac{1}{1-0.5z^{-1}}$.\\the value of $\alpha$ is
 \begin{figure}[h]
-    \includegraphics[width=1\columnwidth]{questionfig.png}
+    \includegraphics[width=1\columnwidth]{2021/BM/31/figs/questionfig.png}
     \label{fig:question31bm}
-\end{figure}\\
+\end{figure} \hfill(GATE 2021 BM)
 \solution
-\input{Parameter.tex}\\
+\fi
+
+\input{2021/BM/31/table/Parameter.tex}\\
 From diagram we have:
 \begin{align}
     Y\brak{z}&=X\brak{z}\brak{\sum_{n=0}^{\infty}\brak{z^{-1}\alpha^{2}}^n}\label{eq:311_bm}
@@ -75,8 +77,3 @@ Dividing by $X\brak{z}$ in both sides:
 \frac{1}{1-0.5z^{-1}}&=\frac{1}{1-z^{-1}\alpha^{2}}\label{eq:315_bm}\\
 \implies \alpha&=\frac{1}{\sqrt{2}}\label{eq:316_bm}
 \end{align}
-
-
-
-\end{document}
-
