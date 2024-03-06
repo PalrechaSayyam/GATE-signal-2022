@@ -17,4 +17,15 @@ Let $\dfrac{\partial y\brak{x,t}}{\partial t}$ be $y_t\brak{x,t}$ and $\dfrac{\p
  &= \dfrac{d}{dx}\int_{0}^{\infty}e^{-st}y\brak{x,t}dt \label{L(y_x(x,t))}\\
  &= \dfrac{dY\brak{x,s}}{dx}
 \end{align}
+
+\item Laplace transform of integrals:\\
+Let the function defined as $y(t) = \int_0^t f(u) du$ for all $t > 0$\\
+Laplace transform of y(t) in t 
+\begin{align}
+    \mathcal{L} \brak{y(t)} &= \int_0^{\infty} e^{-st} y(t) dt\\
+    &= \int_0^{\infty} e^{-st} \int_0^t f(u) du dt\\
+    &= \int_0^t f(u) du \sbrak{- \frac{e^{-st}}{s}}_0^{\infty} + \int_0^{\infty} \frac{e^{-st}}{s} f(t) dt\\
+    &= \frac{F(s)}{s}
+\end{align}
+
 \end{enumerate}
