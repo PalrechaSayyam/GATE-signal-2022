@@ -1,0 +1,44 @@
+\iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[a4,12pt,onecolumn]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{circuitikz}
+
+\begin{document}
+
+\title{ signals and systems
+\vspace{1cm}
+
+Gate2021-ec-Q52}
+\author{EE23BTECH11014- Devarakonda Guna vaishnavi}
+\maketitle
+\textbf{Question:}
+
+A message signal having peak-to-peak value of $2 \, \text{V}$, root mean square value of $0.1 \, \text{V}$, and bandwidth of $5 \, \text{kHz}$ is sampled and fed to a pulse code modulation (PCM) system that uses a uniform quantizer. The PCM output is transmitted over a channel that can support a maximum transmission rate of $50 \, \text{kbps}$. Assuming that the quantization error is uniformly distributed, calculate the maximum signal-to-quantization noise ratio (rounded off to two decimal places).\\
+\solution:
+\fi
+\begin{table}[h!]
+    \centering
+    \input{table/g21.tex}
+    \caption{Input Parameters}
+    \label{table:parameters}
+\end{table}\\
+\textbf{Calculate SQNR(Signal-to-quantization noise ratio):}
+\begin{align} 
+\text{SQNR} &= 6.02 \times N + 1.76 
+\label{eq:sqnr}\\
+\implies \text{SQNR} &= 31.86
+\end{align}
