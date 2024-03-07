@@ -18,6 +18,14 @@
 \solution
 \input{2021/EC/50/50.tex}
 \pagebreak
+\item Consider a unity feedback system with closed loop transfer function
+\begin{align*}
+\frac{C\brak{s}}{R\brak{s}} &= \frac{s + 90}{s^2 + 10s + 90}
+\end{align*}
+The steady state error with respect to a unit ramp input is \rule{1cm}{0.15mm} .
+\hfill(GATE 2021 BM) \\
+\solution
+\input{2021/BM/46/main.tex}
 \item A unit step input is applied to a system with impulse response H\brak{s} = $\frac{1- \frac{s}{\omega{_z}}}{1+\frac{s}{\omega{_p}}}$ at t=0. The output of the system $y\brak{t}$ at t=$0^+$ is:
 \begin{enumerate}[label=\alph*)]
  \item 1
@@ -47,5 +55,17 @@ The stability of the overall system is controlled by tuning the PI control param
 \hfill{(GATE EC 2021)}\\
 \solution
 \input{2021/EC/48/ec-48.tex}
+\pagebreak
+\item In the given figure, plant $G_p(s)=\frac{2.2}{(1+0.1s)(1+0.4s)(1+1.2s)}$ and compensator $G_c(s)=K\brak{\frac{1+T_1s}{1+T_2s}}$ . The external disturbance input is D(s). It is desired that when the disturbance is a unit step, the steady-state error should not exceed 0.1 unit. The minimum value of K is 
+\hfill{(GATE EE 2021)}\\
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\columnwidth]{2021/EE/47/figs/fig.png}
+    \caption{}
+    \label{fig:sr40}
+\end{figure}
+\\
+\solution
+\input{2021/EE/47/gate.tex}
 \pagebreak
 \end{enumerate}
