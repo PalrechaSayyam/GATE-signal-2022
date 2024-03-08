@@ -12,27 +12,27 @@
 \contentsline {chapter}{\numberline {4}Systems}{111}{chapter.4}%
 \contentsline {section}{\numberline {4.1}2022}{111}{section.4.1}%
 \contentsline {section}{\numberline {4.2}2021}{153}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Sequences}{191}{chapter.5}%
-\contentsline {section}{\numberline {5.1}2022}{191}{section.5.1}%
-\contentsline {section}{\numberline {5.2}2021}{202}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Sampling}{203}{chapter.6}%
-\contentsline {section}{\numberline {6.1}2022}{203}{section.6.1}%
-\contentsline {section}{\numberline {6.2}2021}{208}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Contour Integration}{217}{chapter.7}%
-\contentsline {section}{\numberline {7.1}2022}{217}{section.7.1}%
-\contentsline {section}{\numberline {7.2}2021}{222}{section.7.2}%
-\contentsline {chapter}{\numberline {8}Laplace Transform}{223}{chapter.8}%
-\contentsline {section}{\numberline {8.1}2022}{223}{section.8.1}%
-\contentsline {section}{\numberline {8.2}2021}{289}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Fourier transform}{315}{chapter.9}%
-\contentsline {section}{\numberline {9.1}2022}{315}{section.9.1}%
-\contentsline {section}{\numberline {9.2}2021}{356}{section.9.2}%
-\contentsline {chapter}{\numberline {10}Numerical Methods}{375}{chapter.10}%
-\contentsline {section}{\numberline {10.1}2022}{375}{section.10.1}%
-\contentsline {section}{\numberline {10.2}2021}{376}{section.10.2}%
-\contentsline {chapter}{\numberline {A}Fourier transform}{379}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Contour Integration}{383}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Laplace Transform}{387}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Filters}{391}{appendix.D}%
-\contentsline {chapter}{\numberline {E}Analogous Systems}{399}{appendix.E}%
-\contentsline {chapter}{\numberline {F}Frequency Response}{403}{appendix.F}%
+\contentsline {chapter}{\numberline {5}Sequences}{195}{chapter.5}%
+\contentsline {section}{\numberline {5.1}2022}{195}{section.5.1}%
+\contentsline {section}{\numberline {5.2}2021}{206}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Sampling}{207}{chapter.6}%
+\contentsline {section}{\numberline {6.1}2022}{207}{section.6.1}%
+\contentsline {section}{\numberline {6.2}2021}{212}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Contour Integration}{221}{chapter.7}%
+\contentsline {section}{\numberline {7.1}2022}{221}{section.7.1}%
+\contentsline {section}{\numberline {7.2}2021}{226}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Laplace Transform}{227}{chapter.8}%
+\contentsline {section}{\numberline {8.1}2022}{227}{section.8.1}%
+\contentsline {section}{\numberline {8.2}2021}{293}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Fourier transform}{319}{chapter.9}%
+\contentsline {section}{\numberline {9.1}2022}{319}{section.9.1}%
+\contentsline {section}{\numberline {9.2}2021}{360}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Numerical Methods}{379}{chapter.10}%
+\contentsline {section}{\numberline {10.1}2022}{379}{section.10.1}%
+\contentsline {section}{\numberline {10.2}2021}{380}{section.10.2}%
+\contentsline {chapter}{\numberline {A}Fourier transform}{383}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Contour Integration}{387}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Laplace Transform}{391}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Filters}{395}{appendix.D}%
+\contentsline {chapter}{\numberline {E}Analogous Systems}{403}{appendix.E}%
+\contentsline {chapter}{\numberline {F}Frequency Response}{407}{appendix.F}%
