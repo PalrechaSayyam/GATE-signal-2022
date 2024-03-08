@@ -1,4 +1,4 @@
-
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,onecolumn]{IEEEtran}
@@ -128,21 +128,48 @@ EE23BTECH11202
 \renewcommand{\thetable}{\theenumi}
 %\renewcommand{\theequation}{\theenumi}
 
-\section{Question EC 13}
-The block diagram of a feedback control system is shown in the figure .
+\section{Question IN 02}
+Consider a unity feedback configuration with a plant and a PID controller as shown in the figure. $G(s) = \frac{1}{(s+1)(s+3)} $ and $ C(s) = \frac{K(s+3+j)(s+3-j)}{s}$ with K being scalar . The closed loop is :
 \begin{center}
-\includegraphics[width=0.5\textwidth]{figs/figure1.png}
+\includegraphics[width=0.5\textwidth]{2021/IN/29/figs/figure1.jpg}
 \end{center}
-The transfer function $\frac{Y(s)}{X(s)}$ of the system is :
+\begin{enumerate}
+\item[A]only stable for $K < 0$
+\item[B]stable for all value of K
+\item[C]only stable for $K > 0$
+\item[D]only stable for K between –1 and +1
+\end{enumerate}
 \section{Solution}
-\input{tables/table1}
+\fi
+\input{2021/IN/29/tables/table1}
 According to Mason's gain formula , transfer function can be given as :
 \begin{align}
-\text{TF } &= \frac{\sum_{k-1}^{n} P_k \Delta_k}{\Delta} = \frac{P_1\Delta_1 + P_2\Delta_2}{\Delta} \\
-&= \frac{G_1 + G_2 }{1 + G_1 H}
+\text{TF } &= \frac{\sum_{k-1}^{n} P_k \Delta_k}{\Delta} = \frac{P\Delta_1}{\Delta} \\
+&= \frac{G(s)C(s) }{1 + G(s)C(s)}
 \end{align}
+Substituting values of G(s) and C(s) : 
+\begin{align}
+\text{TF} &= \frac{k(s+3+j)(s+3-j)}{(s+1)(s+3) + k(s+3+j)(s+3-j)}
+\end{align}
+For the system to be stable , the real part of the pole should be negative.\\
+\begin{align}
+s(s+1)(s+3) + K((s+3)^2 - j^2) = 0\\
+s^3 + s^2(K+4) +s(3+6K) +10  = 0
+\end{align}
+For stability we need :
+\begin{align}
+(K+4)(3+6K) > 10\\
+\text{from Routh Hurwitz Criterion}\\
+[ \because as^3 + bs^2 + cs + d = 0\text{ for stability } bc>ad]\\
+3K +6K^2 +12 +24K > 10\\
+6K^2 +24K +2 >0 
+\end{align}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{2021/IN/29/figs/figure2.png}
+\end{center}
+If k =1 then above equation is valid, hence option A is wrong.\\
+If k = –1 then above equation is invalid, hence option B is wrong.\\
+If k = 2 then also above equation is valid, hence option D is wrong.\\
+If $k > 0$ then always above equation is valid, hence option C is correct.
 
-
-
-
-\end{document}
+%\end{document}
