@@ -1,3 +1,4 @@
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -124,17 +125,18 @@
 Q: A system with two degrees of freedom, as shown in the figure, has masses $m_1=200kg$ and $m_2=100kg$ and stiffness coefficients $k_1=k_2=200N/m$. Then the lowest natural frequency of the system is  \underline{\hspace{2.5cm}} rad/s (rounded off to one decimal place).    
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{figs/g54.fig1.png}
+    \includegraphics[width=\columnwidth]{2022/NM/54/figs/g54.fig1.png}
     \caption{ }
     \label{fig:ishitha.g22.nm.54.f1}
 \end{figure}                   
 \\    \hfill{GATE NM 2022} \\
 
 \solution
+\fi
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{figs/g54.fig2.jpeg}
+    \includegraphics[width=\columnwidth]{2022/NM/54/figs/g54.fig2.jpeg}
     \caption{ }
     \label{fig:ishitha.g22.nm.54.f2}
 \end{figure} 
@@ -144,7 +146,7 @@ METHOD-1:
 \begin{table}[!ht]    
     \centering
     \resizebox{9cm}{2cm}{
-        \input{tables/tableg54.tex} 
+        \input{2022/NM/54/tables/tableg54.tex} 
     }
     \caption{Input Parameters}
     \label{table:ishitha.g22.nm.54.t1}
@@ -223,7 +225,7 @@ m_2sx_2(0)
 X_1(s) \\
 X_2(s)
 }
-= \frac{1}{m_1m_2s^4+(k_1+k_2)m_2s^2+k_2m_1s^2+k_1k_2} \nonumber \\
+= \frac{1}{m_1m_2s^4+(k_1+k_2)m_2s^2+k_2m_1s^2+k_1k_2} 
 \myvec{
 m_2s^2+k_2 & k_2  \\
 k_2& m_1s^2+(k_1+k_2)
@@ -259,7 +261,7 @@ METHOD-2:CONVERTING MECHANICAL SYSTEM INTO ITS ANALOGOUS ELECTRICAL CIRCUIT BY F
 \begin{table}[!ht]    
     \centering
     \resizebox{9cm}{2cm}{
-        \input{tables/tableg54.1.tex} 
+        \input{2022/NM/54/tables/tableg54.1.tex} 
     }
     \caption{Input Parameters}
     \label{table:ishitha.g22.nm.54.t2}
@@ -267,7 +269,7 @@ METHOD-2:CONVERTING MECHANICAL SYSTEM INTO ITS ANALOGOUS ELECTRICAL CIRCUIT BY F
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{figs/tikz.pdf}
+    \includegraphics[width=\columnwidth]{2022/NM/54/figs/tikz.pdf}
     \caption{ }
     \label{fig:ishitha.g22.nm.54.f3}
 \end{figure}  
@@ -325,9 +327,9 @@ q^{''}(t) \systemL{} s^{2}Q(s)-sq(0)-q^{'}(0)
 
 Assuming charge to be maximum at t=0;
 \begin{align}
-L_1\brak{s^2Q_1(s)-sq_1(0)} - k_2\brak{Q_2(s)-Q_1(s)} \nonumber \\ + k_1Q_1(s) &= 0
+L_1\brak{s^2Q_1(s)-sq_1(0)} - k_2\brak{Q_2(s)-Q_1(s)} + k_1Q_1(s) &= 0
 \label{eq:ishitha.g22.nm.54.9.eq} \\
-L_2\brak{s^2Q_2(s)-sq_2(0)} + k_2\brak{Q_2(s)-Q_1(s)}\nonumber \\&=0
+L_2\brak{s^2Q_2(s)-sq_2(0)} + k_2\brak{Q_2(s)-Q_1(s)}&=0
 \label{eq:ishitha.g22.nm.54.10.eq} 
 \end{align}
 
@@ -353,7 +355,7 @@ L_2sq_2(0)
 Q_1(s) \\
 Q2(s)
 }
-= \frac{1}{L_1L_2s^4+(k_1+k_2)L_2s^2+k_2L_1s^2+k_1k_2} \nonumber \\
+= \frac{1}{L_1L_2s^4+(k_1+k_2)L_2s^2+k_2L_1s^2+k_1k_2} 
 \myvec{
 L_2s^2+k_2 & k_2  \\
 k_2& L_1s^2 + \brak{k_1+k_2}
@@ -382,4 +384,4 @@ The roots of s are imaginary so it's Sinusoid.
 \implies \omega_{least} &= 0.765 rad/s
 \end{align} 
 
-\end{document}
+%\end{document}
