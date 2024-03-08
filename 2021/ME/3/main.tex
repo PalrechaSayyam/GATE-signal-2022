@@ -1,0 +1,127 @@
+\iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage[center]{caption} % center the captions to figure
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE 2021 ME 3Q} 
+\author{ee23btech11223 - Soham Prabhakar More% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\bibliographystyle{IEEEtran}
+
+\textbf{Question:} The Dirac-delta function $\brak{\delta\brak{t - t_0}}$ for $t, t_0 \in \Re$, has the following property
+\begin{align}
+    \int_{a}^{b}\phi\brak{t}\delta\brak{t - t_0}dt = 
+    \begin{cases}
+        \phi\brak{t_0}\quad a < t_0 < b\\
+        0 \quad\quad otherwise
+    \end{cases} \label{eq:2022.ME.3.1}
+\end{align}
+
+The Laplace Transform of the Dirac-delta function $\delta\brak{t - a}$ for $a > 0; \mathcal{L}\brak{\delta\brak{t - a}} = F\brak{s}$ is
+
+\hfill{(GATE 2021 ME 3Q)}
+
+\solution
+\fi
+\begin{table}[ht]
+    \input{2021/ME/3/tables/table.tex}
+\end{table} \\
+
+By \eqref{eq:2022.ME.3.1} and $a > 0$,
+\begin{align}
+    F\brak{s} &= \int_{0}^{\infty}\delta\brak{t - a}e^{-st}dt \\
+    \therefore F\brak{s} &= e^{-as}
+\end{align}
+
+The fourier transform,
+\begin{align}
+    G\brak{f} &= \int_{-\infty}^{\infty}\delta\brak{t - a}e^{-2\pi jft}dt \\
+    \therefore G\brak{f} &= e^{-j2\pi fa}
+\end{align}
+For a periodic signal the fourier transform is defined as:
+\begin{align}
+    H\brak{f} &= \sum_{k = -\infty}^{\infty}c_k\delta\brak{f - \frac{k}{T}}
+\end{align}
+where $c_k$ are the fourier series coefficients and $T$ is the period. Thus,
+\begin{align}
+    W_T\brak{f} &= \sum_{k = -\infty}^{\infty}c_k\delta\brak{f - \frac{k}{T}} \\
+    c_k &= \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}w_T\brak{t}e^{-j2\pi \frac{k}{T}f}dt \\
+    c_k &= \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}\brak{\sum_{k = -\infty}^{\infty}\delta\brak{t - kT}}e^{-j2\pi \frac{k}{T}f}dt \\
+\end{align}
+\begin{align}
+    c_k &= \frac{1}{T}\sum_{k = -\infty}^{\infty}\int_{-\frac{T}{2}}^{\frac{T}{2}}\delta\brak{t - kT}e^{-j2\pi \frac{k}{T}f}dt \\
+    c_k &= \frac{1}{T} \\
+    W_T\brak{f} &= \frac{1}{T}\sum_{k = -\infty}^{\infty}\delta\brak{f - \frac{k}{T}} \\
+    \therefore W_T\brak{f} &= \frac{1}{T}w_{\frac{1}{T}}\brak{f}
+\end{align}
+Thus, the fourier transform of impulse train is another impulse train.
+%\begin{align}
+%    f\brak{t} &\system{F} H\brak{f} \\
+%    f\brak{t + T} &\system{F} e^{j2\pi fT}H\brak{f} \\
+%    \because e^{j2\pi fT}H\brak{f} &= H\brak{f} \\
+%    H\brak{f}\brak{1 - e^{j2\pi fT}} &= 0
+%\end{align}
+%Thus, $H\brak{f}$ is zero everywhere except at $f = \frac{n}{T}, n \in Z$
+%\begin{align}
+%    \therefore H\brak{f} &= \sum_{k = -\infty}^{\infty}c_k\delta\brak{f - \frac{k}{T}} \\
+%    \because \sum_{k = -\infty}^{\infty}c_ke^{-j2\pi f\frac{k}{T}} &\system{F} H\brak{f}
+%\end{align}
+%$c_k$ are the fourier series coefficents of $h\brak{t}$,
+%\begin{align}
+%    c_k = \int_{-\frac{T}{2}}^{\frac{T}{2}}
+%\end{align}
+%\end{document}
