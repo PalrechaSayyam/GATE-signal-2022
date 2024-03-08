@@ -1,4 +1,4 @@
-%\iffalse
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,onecolumn]{IEEEtran}
@@ -122,8 +122,9 @@
 Q: The Fourier cosine series of a function is given by: $f(x) = \sum_{n=0}^{\infty} f_{n}\cos{nx}$. For $f(x) = \cos^{4}x$, the numerical value of $(f_{4} + f_{5})$ is
  
 \solution
+\fi
 \begin{table}[h]
-\input{./tables/tab1.tex}
+\input{2022/CE/30/tables/tab1.tex}
 \end{table}
 \begin{align}
 C_n &= \frac{1}{T} \int_{0}^{T} \cos^4(x) e^{\frac{-jn2\pi t}{T}} \,dx \\
@@ -147,6 +148,6 @@ f_n &= 2C_n \\
 \end{align}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.8\textwidth]{./figs/fig1.png}
+	\includegraphics[width=0.8\textwidth]{2022/CE/30/figs/fig1.png}
 \end{figure}
-\end{document}
+%\end{document}
