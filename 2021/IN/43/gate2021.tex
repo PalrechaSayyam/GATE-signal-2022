@@ -1,3 +1,4 @@
+\iffalse
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
@@ -61,6 +62,7 @@
 Given $y(t) = e^{-3t}u(t) * u(t+3)$, where * denotes convolution operation. The value of $y(t)$ as $t \rightarrow \infty$ is
 \hfill{(GATE IN 2021)}\\
 \solution
+\fi
 \begin{align}
 y(t) &=  e^{-3t}u(t) * u(t+3)\\
 x(t) &\xleftrightarrow{\mathcal{L}} X(s)\\
@@ -88,8 +90,8 @@ y(t) = \frac{u(t+3)}{3} - \frac{e^{-3(t+3)}u(t+3)}{3}
 \end{align}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\columnwidth]{figs/plot.png}
+    \includegraphics[width=0.8\columnwidth]{2021/IN/43/figs/plot.png}
     \caption{plot of $y(t)$}
     \label{fig:gate202138fig}
 \end{figure}
-\end{document}
+%\end{document}
