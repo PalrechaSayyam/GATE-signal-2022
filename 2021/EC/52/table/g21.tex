@@ -1,0 +1,26 @@
+
+
+\begin{center}
+\begin{tabular}{|c|p{6cm}|c|c|}
+\hline
+\textbf{Term} & \textbf{Description} & \textbf{Formula} & \textbf{Value} \\
+\hline
+Peak-to-Peak & Peak-to-peak value of the message signal (in volts). & $\sqrt{2} \times \text{RMS}$ & $1.414 \, \text{V}$ \\
+\hline
+RMS & Root mean square value of the message signal (in volts). & $\frac{2}{2\sqrt{2}}$ & $0.707 \, \text{V}$ \\
+\hline
+Bandwidth & Bandwidth of the message signal (in kilohertz). & - & - \\
+\hline
+N & Number of bits per sample used in quantization. & - & $5$ \\
+\hline
+Quantization range & Range of values in which the quantized signal falls (in volts). & $2 \times \text{Peak-to-Peak}$ & $2.828 \, \text{V}$ \\
+\hline
+Step size & The size of each quantization interval (in volts). & $\frac{\text{Quantization range}}{2^N}$ & - \\
+\hline
+Sampling rate & Rate at which the message signal is sampled (in kilohertz). & - & $10 \, \text{kHz}$ \\
+\hline
+Maximum transmission rate & Maximum transmission rate supported by the channel (in kilobits per second). & - & $50 \, \text{kbps}$ \\
+\hline
+\end{tabular}
+\end{center}
+
